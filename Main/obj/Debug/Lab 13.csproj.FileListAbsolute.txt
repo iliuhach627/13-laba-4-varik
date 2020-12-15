@@ -1,0 +1,7 @@
+D:\Ilya\учёба\Языки программирования. 3 сем C#\Lab 13\Main\bin\Debug\Main.exe.config
+D:\Ilya\учёба\Языки программирования. 3 сем C#\Lab 13\Main\bin\Debug\Main.exe
+D:\Ilya\учёба\Языки программирования. 3 сем C#\Lab 13\Main\bin\Debug\Main.pdb
+D:\Ilya\учёба\Языки программирования. 3 сем C#\Lab 13\Main\obj\Debug\Lab 13.csprojAssemblyReference.cache
+D:\Ilya\учёба\Языки программирования. 3 сем C#\Lab 13\Main\obj\Debug\Lab 13.csproj.CoreCompileInputs.cache
+D:\Ilya\учёба\Языки программирования. 3 сем C#\Lab 13\Main\obj\Debug\Main.exe
+D:\Ilya\учёба\Языки программирования. 3 сем C#\Lab 13\Main\obj\Debug\Main.pdb
