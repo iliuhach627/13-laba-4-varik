@@ -12,23 +12,35 @@ namespace Lab_13
             Info.Reader(clientList);
             Info.Writer(clientList);
             Console.Clear();
-            Console.ReadLine();
-            string search = Console.ReadLine();
-            foreach (var s in FindSurname(clientList, search))
-                s.PrintInfo();
 
-            //foreach (Clients client in clientList)
-            //{
-            //    client.PrintInfo();
-            //    Console.WriteLine();
-            //}
-        }
-        private static IEnumerable<Clients> FindSurname(List<Clients> clients, string name)
-        {
-            foreach (var s in clients)
-                if (s is Clients)
-                    if ((s as Clients.Investor).Surname.Contains(name) || (s as Clients.Creditor).Surname.Contains(name) || (s as Clients.Organization).Name.Contains(name))
-                        yield return s;
+            foreach (Clients client in clientList)
+            {
+                client.PrintInfo();
+                Console.WriteLine();
+            }
+
+            Console.ReadLine();
+            Console.Write("Введите дату, с которой клиента начали сотрудничать с банком: ");
+            DateTime askDate = new DateTime();
+            askDate = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine();
+            int foundClients = 0;
+
+            foreach (var client in clientList)
+            {
+                if (client.IsClientByDate(askDate))
+                {
+                    client.PrintInfo();
+                    foundClients++;
+                    Console.WriteLine();
+                }
+            }
+            if (foundClients == 0)
+            {
+                Console.WriteLine("Клиенты по данной дате не найдены.");
+            }
+            Console.ReadLine();
+
         }
     }
 }
